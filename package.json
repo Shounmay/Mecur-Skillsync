@@ -1,0 +1,25 @@
+{
+	"name": "mercor-hackathon",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "if-env TYPE=server && (cd server && npm install && npx prisma db push) || (cd client && npm install)",
+		"start": "node ./server/index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/vaibhav5140/Mercor-Hackathon.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/vaibhav5140/Mercor-Hackathon/issues"
+	},
+	"homepage": "https://github.com/vaibhav5140/Mercor-Hackathon#readme",
+	"dependencies": {
+		"if-env": "^1.0.4"
+	}
+}
